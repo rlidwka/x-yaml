@@ -1,18 +1,15 @@
-name: nconf-yaml
+name: x-yaml
 version: 1.0.0
-description: YAML format plugin for nconf
+description: JS-YAML with a friendly interface
 main: index.js
 dependencies:
   js-yaml: ^3.2.3
-peerDependencies:
-  nconf: '*'
 repository:
   type: git
-  url: "https://github.com/tellnes/nconf-yaml.git"
-author: "Christian Tellnes <christian@tellnes.no> (http://christian.tellnes.com/)"
+  url: "https://github.com/rlidwka/x-yaml.git"
+author: "Alex Kocharin <alex@kocharin.ru>"
 license: MIT
 bugs:
-  url: "https://github.com/tellnes/nconf-yaml/issues"
-homepage: "https://github.com/tellnes/nconf-yaml"
+  url: "https://github.com/rlidwka/x-yaml/issues"
 publishConfig:
   registry: https://registry.npmjs.org/

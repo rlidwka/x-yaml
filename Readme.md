@@ -1,38 +1,10 @@
-# nconf-yaml <sup>[![Version Badge](http://vb.teelaun.ch/tellnes/nconf-yaml.svg)](https://npmjs.org/package/nconf-yaml)</sup>
+# x-yaml
 
-[![Dependency Status](https://david-dm.org/tellnes/nconf-yaml.png)](https://david-dm.org/tellnes/nconf-yaml)
-[![Tips](https://img.shields.io/gratipay/tellnes.svg)](https://gratipay.com/tellnes/)
+JS-YAML wrapper that does these things:
 
-YAML format plugin for [nconf](https://www.npmjs.org/package/nconf)
-
-## Usage
-
-```js
-var nconf = require('nconf')
-
-nconf.file({
-  file: '/path/to/some/file.yaml',
-  format: require('nconf-yaml')
-})
-```
-
-or to add general YAML file support
-
-```js
-var nconf = require('nconf')
-
-nconf.formats.yaml = require('nconf-yaml')
-
-// and then you can do
-
-nconf.file({ file: '/path/to/some/file.yaml', format: 'yaml' })
-```
-
-## Install
-
-```bash
-npm install nconf nconf-yaml
-```
+1. allows you to register `yaml` as an extension
+2. provides `stringify` and `parse` methods
+3. fixes error prototypes/hidden classes
 
 ## License
 
