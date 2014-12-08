@@ -1,10 +1,10 @@
 
 var yaml = require('js-yaml')
 
-exports.stringify = function (obj, options) {
-  return yaml.safeDump(obj, options)
-}
+Object.keys(yaml).forEach(function(k) {
+  exports[k] = yaml[k]
+})
 
-exports.parse = function (obj, options) {
-  return yaml.safeLoad(obj, options)
-}
+// https://github.com/nodeca/js-yaml/pull/152
+exports.stringify = yaml.safeDump
+exports.parse = yaml.safeLoad

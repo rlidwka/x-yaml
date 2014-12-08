@@ -3,7 +3,7 @@ version: 1.0.0
 description: YAML format plugin for nconf
 main: index.js
 dependencies:
-  js-yaml: ^3.2.3
+  js-yaml: '3.x >=3.2.3'
 peerDependencies:
   nconf: '*'
 repository:
